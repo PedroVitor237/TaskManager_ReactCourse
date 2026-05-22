@@ -1,3 +1,5 @@
+import { Trash } from "lucide-react";
+
 function Tasks(props) {
 
     return (
@@ -18,6 +20,16 @@ function Tasks(props) {
 
                         <button className="text-white bg-slate-400 p-2 rounded mb-2">
                             <code>Details</code>
+                        </button>
+
+                        {/* 
+                        <button className="text-white bg-slate-400 p-2 rounded mb-2">
+                            <code>Edit</code>
+                        </button> 
+                        */}
+
+                        <button className="text-white bg-slate-400 p-2 rounded mb-2">
+                            <Trash />
                         </button>
                     </li>
                 ))}
