@@ -25,6 +25,16 @@ function App() {
         setTasks(updatedTasks);
     }
 
+    // Delete a task from the tasks state based on its id
+    function onTaskDelete(taskId) {
+        // Filter out the task with the given id
+        const updatedTasks = tasks.filter((task) => task.id !== taskId);
+        // Update the tasks state with the new array of tasks
+        setTasks(updatedTasks);
+    }
+
+
+
     return (
         <div className="w-screen h-screen bg-slate-500 flex justify-center p-6">
             <div className="w-[500px]">
@@ -32,7 +42,7 @@ function App() {
                 <h1 className="text-3xl text-slate-100 font-bold text-center">Task Manager</h1>
                 
                 <AddTask />
-                <Tasks tasks={tasks} onTaskClick={onTaskClick} />
+                <Tasks tasks={tasks} onTaskClick={onTaskClick} onTaskDelete={onTaskDelete} />
 
             </div>
         </div>

@@ -2,9 +2,12 @@ import { Trash } from "lucide-react";
 
 function Tasks(props) {
 
+// "function Tasks({ tasks, onTaskClick })" it's the same as "function Tasks(props)" but with destructuring, so we can use tasks and onTaskClick directly instead of props.tasks and props.onTaskClick
+
     return (
         <div>
             <h2>Tasks</h2>
+
             <ul className="space-y-2 p-3 bg-slate-200 rounded-md shadow-md"> 
                 {/* Map through the tasks array and display each task */}
                 {props.tasks.map((task) => (
@@ -28,7 +31,10 @@ function Tasks(props) {
                         </button> 
                         */}
 
-                        <button className="text-white bg-slate-400 p-2 rounded mb-2">
+                        <button 
+                        onClick={() => props.onTaskDelete(task.id)} 
+                        className="text-white bg-slate-400 p-2 rounded mb-2"
+                        >
                             <Trash />
                         </button>
                     </li>
