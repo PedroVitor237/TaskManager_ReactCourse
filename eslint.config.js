@@ -33,6 +33,7 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      'react/prop-types': 'off', // Disable prop-types rule when we're using TypeScript for type checking or when we don't want to use prop-types at all.
     },
   },
 ]

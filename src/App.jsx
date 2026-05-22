@@ -1,7 +1,14 @@
 import Tasks from './components/Tasks';
 import AddTask from './components/AddTask';
+import { useState } from 'react';
 
 function App() {
+
+    const [tasks, setTasks] = useState([
+        { id: 1, title: "Task 1", completed: false },
+        { id: 2, title: "Task 2", completed: true },
+        { id: 3, title: "Task 3", completed: false },
+    ]);
 
     return (
         <div className="w-screen h-screen bg-slate-500 flex justify-center p-6">
@@ -10,8 +17,8 @@ function App() {
                 <h1 className="text-3xl text-slate-100 font-bold text-center">Task Manager</h1>
                 
                 <AddTask />
-                <Tasks />
-                
+                <Tasks tasks={tasks} />
+
             </div>
         </div>
     )
