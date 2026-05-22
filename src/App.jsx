@@ -33,6 +33,17 @@ function App() {
         setTasks(updatedTasks);
     }
 
+    // AddTask 
+    function onAddTask(title, description) {
+        const newTask = {
+            id: Date.now(), // Generate a unique id based on the current timestamp
+            title,
+            description,
+            isCompleted: false,
+        };
+
+        setTasks((prevTasks) => [...prevTasks, newTask]);
+    }
 
 
     return (
@@ -41,7 +52,7 @@ function App() {
 
                 <h1 className="text-3xl text-slate-100 font-bold text-center">Task Manager</h1>
                 
-                <AddTask />
+                <AddTask onAddTask={onAddTask} />
                 <Tasks tasks={tasks} onTaskClick={onTaskClick} onTaskDelete={onTaskDelete} />
 
             </div>
