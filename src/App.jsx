@@ -1,15 +1,24 @@
 import Tasks from './components/Tasks';
 import AddTask from './components/AddTask';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
 
-    const [tasks, setTasks] = useState([
+    const [tasks, setTasks] = useState(
+        JSON.parse(localStorage.getItem("tasks")) ||
+        [
         // Hardcoded tasks for testing purposes
-        { id: 1, title: "Task 1", description: "This is the first task", isCompleted: false },
-        { id: 2, title: "Task 2", description: "This is the second task", isCompleted: true },
-        { id: 3, title: "Task 3", description: "This is the third task", isCompleted: false },
+
+        // { id: 1, title: "Task 1", description: "This is the first task", isCompleted: false },
+        // { id: 2, title: "Task 2", description: "This is the second task", isCompleted: true },
+        // { id: 3, title: "Task 3", description: "This is the third task", isCompleted: false },
+        
     ]);
+
+    useEffect(() => {
+        // This will run once when the component mounts
+        localStorage.setItem("tasks", JSON.stringify(tasks)); // Save the tasks to local storage whenever the tasks state changes
+    }, [tasks]); // The dependency array [tasks] ensures that this effect runs whenever the tasks state changes
 
     // Update the tasks state by toggling the completed status of the clicked task
     function onTaskClick(taskId) {

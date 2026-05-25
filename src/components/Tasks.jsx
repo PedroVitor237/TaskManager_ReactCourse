@@ -24,7 +24,9 @@ function Tasks(props) {
 
             <ul className="space-y-2 p-3 bg-slate-200 rounded-md shadow-md"> 
 
-                <h2>Tasks</h2>
+                <h2>
+                    {props.tasks.length === 0 ? "You don't have any tasks yet..." : "Tasks List"}
+                </h2>
 
                 {/* Map through the tasks array and display each task */}
                 {props.tasks.map((task) => (
