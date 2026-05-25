@@ -16,9 +16,27 @@ function App() {
     ]);
 
     useEffect(() => {
-        // This will run once when the component mounts
-        localStorage.setItem("tasks", JSON.stringify(tasks)); // Save the tasks to local storage whenever the tasks state changes
+        // Save the tasks to local storage whenever the tasks state changes
+        localStorage.setItem("tasks", JSON.stringify(tasks)); 
     }, [tasks]); // The dependency array [tasks] ensures that this effect runs whenever the tasks state changes
+
+    useEffect(() => {
+        const fetchTasks = async () => {
+            // Call API
+            const response = await fetch("https://jsonplaceholder.typicode.com/todos?_limit=5", {
+                method: "GET", // The default method is GET, so this line is optional, was added for clarity purposes
+            });
+            // Get data
+            const data = await response.json();
+            // Store and persist data in state
+            setTasks(data);
+        };
+
+        fetchTasks();
+
+    }, []); // When a empty array is passed as the second argument, the effect will only run once when the component mounts, you can use it for any initialization logic if needed
+
+
 
     // Update the tasks state by toggling the completed status of the clicked task
     function onTaskClick(taskId) {
