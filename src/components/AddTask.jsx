@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ListPlus } from 'lucide-react';
+import Input from "./Input";
 
 function AddTask({ onAddTask }) {
 
@@ -10,19 +11,17 @@ function AddTask({ onAddTask }) {
     return (
         <div className="space-y-2 p-3 bg-slate-200 rounded-md shadow-md flex flex-col">
             <h2>Add Task</h2>
-            <input
+            <Input
                 type="text"
                 placeholder="Task title"
                 value={title}
                 onChange={(event) => setTitle(event.target.value)}
-                className="w-full p-2 rounded border border-slate-300 focus:outline-none focus:ring-2 focus:ring-slate-400"
             />
-            <input
+            <Input
                 type="text"
                 placeholder="Task description"
                 value={description}
                 onChange={(event) => setDescription(event.target.value)}
-                className="w-full p-2 rounded border border-slate-300 focus:outline-none focus:ring-2 focus:ring-slate-400"
             />
 
             <button 
