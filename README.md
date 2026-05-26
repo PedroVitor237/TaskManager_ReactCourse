@@ -1,6 +1,6 @@
 # TaskManager_ReactCourse
 
-Projeto desenvolvido em ReactJS durante os estudos do curso **React para Iniciantes**, do canal urlFelipe Rocha Full Stack Club[https://www.youtube.com/@FelipeRochaFullStackClub](https://www.youtube.com/@FelipeRochaFullStackClub).
+Projeto desenvolvido em ReactJS durante os estudos do curso de React para iniciantes, do canal [Felipe Rocha • Full Stack Club](https://youtube.com/@dicasparadevs?si=qvoOi3yBfpqfax8t).
 
 O objetivo deste projeto foi praticar conceitos fundamentais do React, como componentização, gerenciamento de estado, props, renderização dinâmica e manipulação de eventos, através da construção de um gerenciador de tarefas.
 
@@ -56,7 +56,7 @@ Durante o desenvolvimento do projeto, foram aplicados conceitos importantes do e
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/TaskManager_ReactCourse.git
+git clone https://github.com/PedroVitor237/TaskManager_ReactCourse.git
 ```
 
 ### 2. Acesse a pasta do projeto
@@ -152,7 +152,7 @@ Algumas funcionalidades planejadas para futuras versões do projeto:
 
 Curso utilizado como referência:
 
-* urlReact para Iniciantes - Felipe Rocha Full Stack Club[https://www.youtube.com/results?search_query=react+para+iniciantes+felipe+rocha+full+stack+club](https://www.youtube.com/results?search_query=react+para+iniciantes+felipe+rocha+full+stack+club)
+* [Curso de React para Iniciantes](https://youtu.be/2RWsLmu8yVc?si=dCBV5CVJt6MwpehS) - Felipe Rocha • Full Stack Club
 
 ---
 
