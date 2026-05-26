@@ -1,12 +1,12 @@
 # TaskManager_ReactCourse
 
-Projeto desenvolvido em ReactJS durante os estudos do curso de React para iniciantes, do canal [Felipe Rocha • Full Stack Club](https://youtube.com/@dicasparadevs?si=qvoOi3yBfpqfax8t).
+Project developed in ReactJS during my studies with the React for beginners course from the channel [Felipe Rocha • Full Stack Club](https://youtube.com/@dicasparadevs?si=qvoOi3yBfpqfax8t).
 
-O objetivo deste projeto foi praticar conceitos fundamentais do React, como componentização, gerenciamento de estado, props, renderização dinâmica e manipulação de eventos, através da construção de um gerenciador de tarefas.
+The main goal of this project was to practice fundamental React concepts such as componentization, state management, props, dynamic rendering, and event handling through the development of a task management application.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Technologies Used
 
 * ReactJS
 * JavaScript
@@ -20,58 +20,58 @@ O objetivo deste projeto foi praticar conceitos fundamentais do React, como comp
 
 ---
 
-## 📚 Conceitos Praticados
+## 📚 Concepts Practiced
 
-Durante o desenvolvimento do projeto, foram aplicados conceitos importantes do ecossistema React:
+During the development of this project, several important React ecosystem concepts were applied:
 
-* Componentes reutilizáveis
+* Reusable components
 * Props
 * useState
-* Eventos no React
-* Renderização condicional
-* Listagem dinâmica
+* React events
+* Conditional rendering
+* Dynamic list rendering
 * React Router
-* Manipulação de query parameters
-* Estruturação de projetos React
+* Query parameter manipulation
+* React project structure organization
 
 ---
 
-## 📸 Funcionalidades
+## 📸 Features
 
-* ✅ Adicionar tarefas
-* ✅ Remover tarefas
-* ✅ Marcar tarefas como concluídas
-* ✅ Persistência de dados com LocalStorage
-* ✅ Página de detalhes das tarefas
-* ✅ Navegação entre páginas com React Router
-* ✅ Uso de Query Parameters
-* ✅ Interface estilizada com Tailwind CSS
-* ✅ Componentização da interface
-* ✅ Ícones com Lucide React
+* ✅ Add tasks
+* ✅ Remove tasks
+* ✅ Mark tasks as completed
+* ✅ Data persistence using LocalStorage
+* ✅ Task details page
+* ✅ Navigation between pages with React Router
+* ✅ Query Parameters usage
+* ✅ Interface styled with Tailwind CSS
+* ✅ Component-based architecture
+* ✅ Icons using Lucide React
 
 ---
 
-## ⚙️ Como Executar o Projeto
+## ⚙️ How to Run the Project
 
-### 1. Clone o repositório
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/PedroVitor237/TaskManager_ReactCourse.git
 ```
 
-### 2. Acesse a pasta do projeto
+### 2. Access the project folder
 
 ```bash
 cd TaskManager_ReactCourse
 ```
 
-### 3. Instale as dependências
+### 3. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 4. Execute o projeto
+### 4. Run the project
 
 ```bash
 npm run dev
@@ -79,7 +79,7 @@ npm run dev
 
 ---
 
-## 📂 Estrutura do Projeto
+## 📂 Project Structure
 
 ```bash
 TaskManager_ReactCourse
@@ -112,52 +112,52 @@ TaskManager_ReactCourse
 
 ---
 
-## 🎯 Objetivo do Projeto
+## 🎯 Project Purpose
 
-Este projeto foi desenvolvido com foco em aprendizado prático de ReactJS moderno, utilizando componentes funcionais, hooks e roteamento.
+This project was developed with a focus on practical learning of modern ReactJS using functional components, hooks, and routing.
 
-Além da implementação principal do gerenciador de tarefas, o projeto também serviu como ambiente de estudos para:
+Besides the main task manager implementation, this project also served as a learning environment for:
 
-* gerenciamento de estado com `useState`
-* efeitos colaterais com `useEffect`
-* persistência de dados no navegador
-* componentização
-* navegação entre páginas
-* manipulação de parâmetros na URL
-* boas práticas iniciais de organização em React
+* state management with `useState`
+* side effects with `useEffect`
+* browser data persistence
+* componentization
+* page navigation
+* URL parameter manipulation
+* basic React project organization best practices
 
-O código também contém comentários de estudo, testes de implementação e ideias futuras para evolução do sistema.
-
----
-
-## 🔮 Futuras Implementações
-
-Algumas funcionalidades planejadas para futuras versões do projeto:
-
-* Edição de tarefas
-* Filtros e ordenação
-* Integração com banco de dados
-* Sistema de autenticação
-* Categorias e tags
-* Responsividade mobile
-* Drag and drop
-* Temas personalizados
-* Exportação/importação de tarefas
-* Funcionalidade offline
-* Melhorias de acessibilidade
+The code also contains study comments, implementation tests, and future ideas for expanding the system.
 
 ---
 
-## 👨‍💻 Créditos
+## 🔮 Future Implementations
 
-Curso utilizado como referência:
+Some features planned for future versions of the project:
 
-* [Curso de React para Iniciantes](https://youtu.be/2RWsLmu8yVc?si=dCBV5CVJt6MwpehS) - Felipe Rocha • Full Stack Club
+* Task editing
+* Filtering and sorting
+* Database integration
+* Authentication system
+* Categories and tags
+* Mobile responsiveness
+* Drag and drop functionality
+* Custom themes
+* Task export/import
+* Offline support
+* Accessibility improvements
 
 ---
 
-## 📄 Licença
+## 👨‍💻 Credits
 
-Este projeto está sob a licença MIT.
+Course used as reference:
 
-Sinta-se livre para estudar, modificar e utilizar o código para fins educacionais.
+* [React for Beginners Course](https://youtu.be/2RWsLmu8yVc?si=dCBV5CVJt6MwpehS) - Felipe Rocha • Full Stack Club
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+Feel free to study, modify, and use the code for educational purposes.
