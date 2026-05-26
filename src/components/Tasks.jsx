@@ -1,4 +1,4 @@
-import { Trash } from "lucide-react";
+import { Trash, CheckIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 
@@ -35,14 +35,15 @@ function Tasks(props) {
 
                         <button 
                             onClick={() => props.onTaskClick(task.id)}
-                            className={`text-white text-left bg-slate-400 w-full p-2 rounded mb-2 ${task.isCompleted && "line-through"}`}
+                            className={`text-white text-left bg-slate-400 w-full flex items-center gap-2 p-2 rounded mb-2 ${task.isCompleted && "line-through"}`}
                         >
+                            {task.isCompleted ? <CheckIcon /> : null}
                             {task.title}
-                            {task.isCompleted ? " (Completed)" : " (Incomplete)"}
+                            
                         </button>
 
                         <Button
-                            onClick={() => onDetailsClick(task)}S
+                            onClick={() => onDetailsClick(task)}
                         >
                             <code>Details</code>
                         </Button>
